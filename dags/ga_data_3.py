@@ -45,6 +45,7 @@ callF1 = SimpleHttpOperator(
     task_id = "one_to_fail",
     method = 'GET',
     endpoint = '/',
+    http_conn_id = 'cloud_run_gcp_flask',
     xcom_push = True,
     dag=dag,
 )
